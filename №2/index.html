@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Rotator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .rotator {
+            display: inline-block;
+        }
+        .rotator__case {
+            display: none;
+        }
+        .rotator__case_active {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+          Я
+          <span class="rotator">
+            <span class="rotator__case rotator__case_active">Бог JS</span>
+            <span class="rotator__case">Лучший программист на земле</span>
+            <span class="rotator__case">покорю этот мир</span>
+            <span class="rotator__case">учусь в Нетологии</span>
+            <span class="rotator__case">счастливый как никто</span>
+            <span class="rotator__case">радуюсь жизни</span>
+          </span>
+        </p>
+        <p>
+            Мы
+            <span class="rotator">
+                <span class="rotator__case rotator__case_active" data-speed="1000" data-color="purple">команда мечты</span>
+                <span class="rotator__case" data-speed="1000" data-color="orange">будущее технологий</span>
+                <span class="rotator__case" data-speed="1000" data-color="teal">инноваторы мира</span>
+                <span class="rotator__case" data-speed="1000" data-color="red">создаем историю</span>
+            </span>
+        </p>
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>

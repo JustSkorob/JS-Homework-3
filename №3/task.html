@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-читалка</title>
+    <style>
+        .book {
+            font-size: 16px;
+            color: #000;
+            background-color: #fff;
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .font-size {
+            cursor: pointer;
+            margin: 0 5px;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+        .font-size_active {
+            background-color: #007bff;
+            color: #fff;
+            border-color: #007bff;
+        }
+        .book_fs-small {
+            font-size: 14px;
+        }
+        .book_fs-big {
+            font-size: 18px;
+        }
+        .color {
+            cursor: pointer;
+            margin: 0 5px;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+        .color_active {
+            background-color: #007bff;
+            color: #fff;
+            border-color: #007bff;
+        }
+        .book_color-black {
+            color: #000;
+        }
+        .book_color-gray {
+            color: #6c757d;
+        }
+        .book_color-whitesmoke {
+            color: #f5f5f5;
+        }
+        .book_bg-white {
+            background-color: #fff;
+        }
+        .book_bg-gray {
+            background-color: #6c757d;
+        }
+        .book_bg-black {
+            background-color: #000;
+        }
+        .controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <div class="font-size-controls">
+            <span class="font-size" data-size="small">Small</span>
+            <span class="font-size font-size_active" data-size="normal">Medium</span>
+            <span class="font-size" data-size="big">Large</span>
+        </div>
+        <div class="color-controls">
+            Текст:
+            <span class="color" data-color="gray">Gray</span>
+            <span class="color" data-color="whitesmoke">Whitesmoke</span>
+            <span class="color color_active" data-color="black">Black</span>
+        </div>
+        <div class="bg-controls">
+            Фон:
+            <span class="color bg" data-bg="gray">Gray</span>
+            <span class="color bg" data-bg="black">Black</span>
+            <span class="color bg color_active" data-bg="white">White</span>
+        </div>
+    </div>
+    <div class="book">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>
